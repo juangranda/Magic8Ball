@@ -1,0 +1,34 @@
+﻿body {
+    background-color:#1E1E1E;
+    color:white;
+}
+.container {
+  width:100%;
+  height: 100%;
+  margin: 0 auto;
+
+  display: block;  
+}
+.top-Col{
+    height:15vh;
+}
+.ball{
+    position:relative;
+    margin:auto;
+    vertical-align:central;
+    display:block;
+    background-color:black;
+    width: 30%;
+    height:0;
+    padding-bottom:30%;
+        -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+
+}
+.ballMessage{
+    text-align:center;
+    padding-top:40%;
+    font-size:20px;
+
+}

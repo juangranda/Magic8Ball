@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Magic 8 Ball</title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="top-Col"></div>
+        <div class="ball" onclick="shakeBall()">
+            <div class="ballMessage">
+                <p id="message" class="fade"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function shakeBall() {
+            var phrases = ["It is certain", "It is decidedly so", "Without a doubt", "Yes, definitely", "You may rely on it",
+                           "As I see it, yes", "Most likely", "Outlook good", "Concentrate and ask again", "Cannot predict now"];
+            var x = Math.floor((Math.random() * 10));
+            document.getElementById("message").innerHTML = phrases[x];
+        }
+    </script>
+
+
+
+</body>
+</html>
